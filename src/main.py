@@ -1,19 +1,13 @@
 from functions.csvToBase64 import *
 from functions.baseT64oCsv import *
 
-print('0=================================================================================0')
-print()
-print('Creado por: Oliver Consterla Araya')
-print('            Leonardo Bueras Valdes')
-print()
-print('0=================================================================================0')
-print()
-print()
+print('0=================================================================================0\n\nCreado por: Oliver Consterla Araya\n            Leonardo Bueras Valdes\n0=================================================================================0\n\n')
 
 option = input("1 - Convertir base64 a csv\n2 - Convertir csv a base64\n0 - Salir del archivo\nIngrese la opcion que necesita: ")
 
 while(option != "0"):
 
+    print()
     match option:
         case "0":
             exit()
@@ -24,6 +18,5 @@ while(option != "0"):
             cadena64 = str(input("Nombre de archivo a decodificar sin extension .txt: "))
             decode64(cadena64)
     
-
+    print('0=================================================================================0\n\nCreado por: Oliver Consterla Araya\n            Leonardo Bueras Valdes\n0=================================================================================0\n\n')
     option = input("1 - Convertir base64 a csv\n2 - Convertir csv a base64\n0 - Salir del archivo\nIngrese la opcion que necesita: ")
-    print()
