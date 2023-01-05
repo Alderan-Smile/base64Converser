@@ -1,11 +1,11 @@
 import os
 import base64
 
-obj = os.listdir('../Entrada/')
-
 
 def encode64dir():
     import sys
+    
+    obj = os.listdir('../Entrada/')
     ernot = 0
     os.system('cls')
     for entry in obj :

@@ -1,11 +1,11 @@
 import os
 import base64
 
-obj = os.listdir('../Entrada/')
-
 def decode64dir():
-    ernot2 = 0
     import sys
+    
+    obj = os.listdir('../Entrada/')
+    ernot2 = 0
     os.system('cls')
     for entry in obj :
         if entry.endswith(".txt"):

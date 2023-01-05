@@ -10,6 +10,11 @@ print()
 print('0=================================================================================0\n\n          Accenture 2023          \nCreado por: Oliver Consterla Araya\n            Leonardo Bueras Valdes\n0=================================================================================0\n\n')
 
 try:
+    if not os.path.exists('../Entrada/'):
+        os.makedirs('../Entrada/')
+    if not os.path.exists('../Salida/'):
+        os.makedirs('../Salida/')
+    
     option = input("1 - Convertir base64 a csv\n2 - Convertir csv a base64\n3 - Convertir todos los csv de la carpeta a base64\n4 - Convertir todos los base64 de la carpeta a csv\n0 - Salir del archivo\nIngrese la opcion que necesita: ")
 
     while(option.isnumeric):
