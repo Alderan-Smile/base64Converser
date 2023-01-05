@@ -16,7 +16,7 @@ while(option != "0"):
         case "0":
             exit()
         case "2":
-            fileName = input("Nombre de archivo a decodificar sin extension .csv: ")
+            fileName = input("Nombre de archivo a codificar sin extension .csv: ")
             encode64(fileName)
         case "1":
             cadena64 = str(input("Nombre de archivo a decodificar sin extension .txt: "))
