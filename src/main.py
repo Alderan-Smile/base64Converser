@@ -1,5 +1,5 @@
-from csvToBase64 import *
-from baseT64oCsv import *
+from functions.csvToBase64 import *
+from functions.baseT64oCsv import *
 
 print('0=================================================================================0')
 print()
