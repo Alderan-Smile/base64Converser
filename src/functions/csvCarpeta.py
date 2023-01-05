@@ -18,13 +18,12 @@ def encode64dir():
                 print('Archivo '+entry+' no encontrado en carpeta Entrada',file=sys.stderr)
                 print()
             
-            print('Archivos csv en carpeta ../Entrada/ convertidos con exito',file=sys.stderr)
-            print()
-            
-            
     if len(obj) <1:
         print('No existen archivos csv en carpeta',file=sys.stderr)
         print()
     elif ernot == 0:
         print('No existen archivos csv en carpeta',file=sys.stderr)
+        print()
+    else:
+        print('Archivos csv en carpeta ../Entrada/ convertidos con exito',file=sys.stderr)
         print()

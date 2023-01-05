@@ -17,12 +17,12 @@ def decode64dir():
                 print('Archivo '+entry+' no encontrado en carpeta Entrada',file=sys.stderr)
                 print()
             
-            print('Archivos txt en carpeta ../Entrada/ convertidos con exito',file=sys.stderr)
-            print()
-            
     if len(obj) <1:
         print('No existen archivos txt en carpeta',file=sys.stderr)
         print()
-    elif ernot2==0:
+    elif ernot2 == 0:
         print('No existen archivos txt en carpeta',file=sys.stderr)
+        print()
+    else:
+        print('Archivos txt en carpeta ../Entrada/ convertidos con exito',file=sys.stderr)
         print()
