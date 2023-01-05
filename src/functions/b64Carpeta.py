@@ -4,6 +4,7 @@ import base64
 obj = os.listdir('../Entrada/')
 
 def decode64dir():
+    ernot2 = 0
     import sys
     os.system('cls')
     for entry in obj :
@@ -11,6 +12,7 @@ def decode64dir():
             namefile = entry.split(".")[0]
             try:
                 base64.decode(open('../Entrada/'+entry,'rb'),open('../Salida/'+namefile+'.csv','wb'))
+                ernot2=1
             except FileNotFoundError:
                 print('Archivo '+entry+' no encontrado en carpeta Entrada',file=sys.stderr)
                 print()
@@ -19,5 +21,8 @@ def decode64dir():
             print()
             
     if len(obj) <1:
+        print('No existen archivos txt en carpeta',file=sys.stderr)
+        print()
+    elif ernot2==0:
         print('No existen archivos txt en carpeta',file=sys.stderr)
         print()
