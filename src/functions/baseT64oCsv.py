@@ -7,6 +7,7 @@ def decode64(cadena):
     try:
         base64.decode(open('../Entrada/'+cadena+'.txt','rb'),open('../Salida/'+cadena+'.csv','wb'))
         os.system('cls')
+        print('Archivo ../Salida/'+cadena+'.csv creado con exito',file=sys.stderr)
         print()
     except FileNotFoundError:
         os.system('cls')
